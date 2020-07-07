@@ -1,0 +1,11 @@
+
+  <!-- hot fix marquee -->
+  <!-- <marquee  direction="left" class="marquee" style="margin-bottom: -7px;">The site will be under maintenance from 02/29/2020 09:00 AM EST to 03/01/2020 09:00 AM EST</marquee> -->
+  <div class="row">
+    <div [ngClass]="{ 'loader' : displayLoader}"></div>
+      <nordson-nav  (parentLoader)="loaderScreen($event)"></nordson-nav>
+      <nordson-spinner></nordson-spinner>
+      <router-outlet></router-outlet>
+      <nordson-footer></nordson-footer>
+  </div>
+
